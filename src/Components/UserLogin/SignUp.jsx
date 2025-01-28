@@ -3,9 +3,11 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { VscLoading } from "react-icons/vsc";
 import { Link, useNavigate } from "react-router-dom";
 import { imageUpload } from "../Utilit/Utilite";
+import useAuth from "../Share/useAuth/useAuth";
 
 const SignUp = () => {
     const [passwordIcon, setPasswordIcon] = useState(false);
+    const { createUser, updateUser } = useAuth();
     const navigate = useNavigate();
     const [loading, setLoading] = useState(false);
 
@@ -17,23 +19,24 @@ const SignUp = () => {
         const name = form.userName.value;
         const email = form.email.value;
         const password = form.password.value;
-        const image = form.image.files[0]; // Fixed file selection
-
-        if (!image) {
-            alert("Please upload an image!");
-            setLoading(false);
-            return;
-        }
+        const image = form.image.files[0]; // ✅ Correct file selection
 
         try {
+            // ✅ Upload Image
             const photoUrl = await imageUpload(image);
-            const userCreateData = { name, email, password, photoUrl };
-            console.log(userCreateData);
             
-            // Redirect to login after successful account creation
-            navigate('/login');
+            // ✅ Create User
+            const result = await createUser(email, password);
+            
+            // ✅ Update Profile
+            await updateUser(name, photoUrl);
+
+            console.log("User Created:", result.user);
+
+            // ✅ Redirect Only After Successful Update
+            navigate("/");
         } catch (error) {
-            console.error("Image upload failed:", error);
+            console.error("Error during sign-up:", error);
         }
 
         setLoading(false);
@@ -58,11 +61,11 @@ const SignUp = () => {
 
                     {/* Email */}
                     <div className="mb-4">
-                        <label className="block text-sm font-medium text-gray-700">Username or Email</label>
+                        <label className="block text-sm font-medium text-gray-700">Email</label>
                         <input
                             type="email"
                             name="email"
-                            placeholder="Username or Email"
+                            placeholder="Enter Your Email"
                             className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F54A00]"
                             required
                         />
@@ -95,7 +98,7 @@ const SignUp = () => {
                             accept="image/*"
                             name="image"
                             className="w-full p-2 border border-gray-300 rounded-lg"
-                            required
+                            required // ✅ Image must be selected
                         />
                         <p className="text-xs text-gray-500 mt-1">Max size 2MB</p>
                     </div>

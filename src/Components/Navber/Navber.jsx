@@ -2,7 +2,9 @@ import { CiSearch } from "react-icons/ci"; // Importing CiSearch icon
 import { FaRegUser, FaShoppingCart } from "react-icons/fa"; // Importing FaRegUser and FaShoppingCart
 import logo from "../../assets/gorerbager.png"
 import { Link } from "react-router-dom";
+import useAuth from "../Share/useAuth/useAuth";
 const Navbar = () => {
+    const {user} = useAuth()
     return (
         <div>
             {/* Top Bar */}
@@ -37,9 +39,13 @@ const Navbar = () => {
                     {/* Navbar End */}
                     <div className="navbar-end flex gap-5">
                     <div className="relative group">
-                        <Link to='/login' className="flex items-center">
+                       {
+                        user ? <>
+                        <img className="w-8 rounded-full" src={user.photoURL} alt="" />
+                        </> :  <Link to='/login' className="flex items-center">
                           <FaRegUser size={20} />
                         </Link>
+                       }
                         <div className="absolute bottom-full mb-2 hidden group-hover:block bg-[#FC8934] text-white text-xs py-1  px-2 rounded">
                           Account
                         </div>
