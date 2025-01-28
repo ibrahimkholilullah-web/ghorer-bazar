@@ -1,0 +1,114 @@
+[
+    {
+        "_id": 1,
+        "photo": "https://ghorerbazar.com/cdn/shop/files/WhatsAppImage2025-01-12at6.51.00PM.jpg?v=1736686474&width=493",
+        "name": "ক্রিস্টাল হানি/Crystal Honey 1kg",
+        "prices": 1100 ,
+        "newPrices": 1000,
+        "category": "honey"
+    },
+    {
+        "_id": 2,
+        "photo": "https://ghorerbazar.com/cdn/shop/files/Danadarjholagur1kg.png?v=1734511163&width=360",
+        "name": "KHEJURI Danadar Jhola Gurr/দানাদার ঝোলা গুড় 1kg",
+        "prices": 800,
+        "newPrices": 900,
+        "category": "nuts & seeds"
+    },
+    {
+        "_id": 3,
+        "photo": "https://ghorerbazar.com/cdn/shop/files/jholagur1kg.png?v=1734511253&width=360",
+        "name": "KHEJURI Jhola Gurr/ঝোলা গুড় 1kg",
+        "prices": 780,
+        "newPrices": 850,
+        "category": "honey"
+    },
+    {
+        "_id": 4,
+        "photo": "https://ghorerbazar.com/cdn/shop/files/pataligur1kg.png?v=1734511341&width=360",
+        "name": "KHEJURI Patali Gurr/পাটালি গুড় 1kg",
+        "prices": 850,
+        "newPrices": 3900,
+        "category": "tea / coffee"
+    },
+    {
+        "_id": 5,
+        "photo": "https://ghorerbazar.com/cdn/shop/files/WhatsAppImage2025-01-12at6.50.59PM_1.jpg?v=1736686558&width=360",
+        "name": "Crystal Honey – ক্রিস্টাল হানি (২ কেজি)",
+        "prices": 1950,
+        "newPrices": 2200,
+        "category": "sarisha oil"
+    },
+    {
+        "_id": 6,
+        "photo": "https://ghorerbazar.com/cdn/shop/files/mastraid-oil-5-leter.jpg?v=1710309093&width=360",
+        "name": "Local Maghi Sarisha Oil / কাঠের ঘানির ভার্জিন গ্রেড সরিষার তেল (৫ লিটার)",
+        "prices": 1450,
+        "newPrices": 1500,
+        "category": "sarisha oil"
+    },
+    {
+        "_id": 7,
+        "photo": "https://ghorerbazar.com/cdn/shop/files/ghee-500gm.jpg?v=1710231379&width=600",
+        "name": "Gawa Ghee/গাওয়া ঘি (500 গ্রাম)",
+        "prices": 900,
+        "newPrices": 950,
+        "category": "ghee"
+    },
+    {
+        "_id": 8,
+        "photo": "https://ghorerbazar.com/cdn/shop/products/Egyptian-Medjool-Dates.png?v=1720870745&width=600",
+        "name": "Egyptian Medjool Dates - 1 kg (Large)",
+        "prices": 2000,
+        "newPrices": 2100,
+        "category": "dates"
+    },
+    {
+        "_id": 9,
+        "photo": "https://ghorerbazar.com/cdn/shop/files/Shahi-mosla-combo-01.jpg?v=1716820386&width=493",
+        "name": "Shahi Masala Combo",
+        "prices": 1700,
+        "newPrices": 1735,
+        "category": "masala"
+    },
+    {
+        "_id": 10,
+        "photo": "https://ghorerbazar.com/cdn/shop/products/Organic-Extra-Virgin-Coconut-Oil-1.jpg?v=1707771619&width=360",
+        "name":"Organic-Extra-Virgin-Coconut-Oil / অর্গানিক-এক্সট্রা-ভার্জিন-কোকোনাট-অয়েল – 500 ml",
+        "prices": 1065,
+        "newPrices": 1100,
+        "category": "organic oil"
+    },
+    {
+        "_id": 11,
+        "photo": "https://ghorerbazar.com/cdn/shop/files/alomond-01_20a3d5ea-cf27-4031-aafc-2b5d2a7f97a7.jpg?v=1717324916&width=600",
+        "name": "কাঠ বাদাম/Almond (৫০০ গ্রাম)",
+        "prices": 650,
+        "newPrices": 700,
+        "category": "nuts & seeds"
+    },
+    {
+        "_id": 12,
+        "photo": "https://ghorerbazar.com/cdn/shop/files/tea-1kg.png?v=1730104547&width=493",
+        "name": "Sreemangal’s Tea Gold /শ্রীমঙ্গল এর টি গোল্ড (৫০০ গ্রাম)",
+        "prices": 300,
+        "newPrices": 350,
+        "category": "tea / coffee"
+    },
+    {
+        "_id": 13,
+        "photo": "https://ghorerbazar.com/cdn/shop/files/immune.jpg?v=1726748421&width=493",
+        "name": "Karkuma Immune Plus (120 capsule",
+        "prices": 850,
+        "newPrices": 800,
+        "category": "functional food"
+    },
+    {
+        "_id": 14,
+        "photo": "https://ghorerbazar.com/cdn/shop/files/pataligur1kg.png?v=1734511341&width=493",
+        "name": "KHEJURI Patali Gurr/পাটালি গুড় 1kg",
+        "prices": 850,
+        "newPrices": 900,
+        "category": "খেজুর গুড়া"
+    }
+]
